@@ -1,0 +1,66 @@
+@keyframes moveFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body {
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    font-family: sans-serif;
+
+    overflow: hidden;
+	animation: moveFromBottom .6s ease both; 
+}
+
+h1 {
+    text-align: center;
+    color: #181818;
+}
+
+p {
+    text-align: center;
+}
+
+input {
+    font-size: 1em;
+    font-family: inherit;
+}
+
+input[type='submit'] {
+    background-color: #f6821f; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+}
+
+.container {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > * {
+    margin-bottom: 25px;
+}
+
+textarea#title {
+    font-size: 2em;
+    text-align: center;
+    border: none;
+    color: #181818;
+    resize: none;
+    outline: none;
+}
+

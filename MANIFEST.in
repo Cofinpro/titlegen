@@ -1,0 +1,2 @@
+graft titlegen/templates
+graft titlegen/static

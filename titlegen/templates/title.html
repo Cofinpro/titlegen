@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+    <title>Cofinpro Techjob-Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/titlegen.css">
+</head>
+<body>
+<form method="post" class="container">
+    {{ form.csrf_token }}
+    <header>
+        <h1>Techjob-Generator</h1>
+        <p>Würdest du dich auf diesen Job bewerben?</p>
+    </header>
+    <div id="title">
+        {{ form.title(readonly=readonly) }}
+    </div>
+    <div id="choices">
+        {{ form.not_cool() }}
+        {{ form.is_cool() }}
+    </div>    
+</form>
+</body>
