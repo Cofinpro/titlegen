@@ -3,3 +3,4 @@ titlegen.egg-info/
 venv/
 *.swp
 *.db
+*.pyc
