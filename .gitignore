@@ -1,3 +1,5 @@
 __pycache__/
 titlegen.egg-info/
 venv/
+*.swp
+*.db
