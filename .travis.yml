@@ -4,3 +4,12 @@ python:
 # command to install dependencies
 install:
   - pip install .
+script: nosetests
+deploy:
+  provider: openshift
+  # Configure these values on your TravisCI 'Repository Settings' page:
+  # http://docs.travis-ci.com/user/environment-variables/#Using-Settings
+  user: $OPENSHIFT_USERNAME
+  password: $OPENSHIFT_PASSWORD
+  app: $OPENSHIFT_APP_NAME
+  domain: $OPENSHIFT_APP_NAMESPACE
