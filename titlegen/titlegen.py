@@ -15,7 +15,7 @@ from datetime import datetime
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.update(dict(
-    DATABASE=os.path.join(app.root_path, 'titlegen.db'),
+    DATABASE=os.environ.get('TITLEGEN_DB', os.path.join(app.root_path, 'titlegen.db')),
     SECRET_KEY=os.urandom(24),
     USERNAME='admin',
     PASSWORD='default',
