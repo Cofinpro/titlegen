@@ -1,0 +1,4 @@
+*.pyc
+*.db
+__pychache__/
+
