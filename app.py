@@ -3,6 +3,7 @@
 # line, it's possible required libraries won't be in your searchable path
 #
 
+import os
 from titlegen import app as application
 
 #
