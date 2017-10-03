@@ -6,10 +6,10 @@ install:
   - pip install .
 script: nosetests
 deploy:
-  provider: openshift
-  # Configure these values on your TravisCI 'Repository Settings' page:
-  # http://docs.travis-ci.com/user/environment-variables/#Using-Settings
-  user: $OPENSHIFT_USERNAME
-  password: $OPENSHIFT_PASSWORD
-  app: $OPENSHIFT_APP_NAME
-  domain: $OPENSHIFT_APP_NAMESPACE
+  provider: elasticbeanstalk
+  access_key_id: "AKIAIOUTUQXXDY34BQJQ"
+  secret_access_key:
+    secure: "U5hswX2oXd34Y6aiwSZ1ImPxJbdTxtIO16ZwywUf4QpBvK8bNSZXxFkIk2RJ4lVqGYg5CD+gzlAhjSRndrdKb2Ch7Hijw5+4JslWb1/RnZThZDh/2IYACJTNG6jsWvWHQ+N5m22tKlQq9Z7/eobbLEzbFeEG1we5aLuXVCFNgVbYdmkzVmj//NK+moP7Zmo9csgiW9tPtOVFFwoSZ6H0nag3KaiAicTy0ELB11VIwR1pqqfqm9kqfa7sFdECjzh/g+kP2ulxcsTGeQTCtaAfeP+KzBKovkkNYlWe1M9iHN+6fH6QqHG00CxtpMoEMmDdefh9P2usLLxeVl5CPOk1WwvpEubzcD7TgUSOxf3cMatjv8l7Bgs2s8aDQcmmdpumKTiJVuC17u9mb5oZ/kPP4LSEcFg7J7NVQKTKiesu6vHiRtgGyPzkhNuqsCZ+ygOZFhQgO5gnXaEGhghvzfdKrb1lL/XGcqWi97Yoam/NAUhMEa9iWalxDcR/ezYuyuAZfwA45fEeOIyyMBGGwKjoEif4psn6bj8TqX0z2SRNWROKdl9ajJszm/8VSD1DCYP3N95dKd4bV0AjUhM2gld5IeX1KyscQCHMhPukCLS3lFgpuaFvQ7rFKIxnN7M1jku9Ar/0kPsr5iCtrTbEMse1JZ+w6NB2A+Q243bkGQh6yUw="
+  region: "eu-central-1"  
+  app: "titlegen"
+  env: "titlegen-dev"
