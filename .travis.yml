@@ -13,3 +13,4 @@ deploy:
   region: "eu-central-1"  
   app: "titlegen"
   env: "titlegen-dev"
+  bucket_name: "elasticbeanstalk-eu-central-1-567106281522"

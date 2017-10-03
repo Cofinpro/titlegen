@@ -1,6 +1,5 @@
 FROM python:3.6
 EXPOSE 5000
-VOLUME ["/var/db"]
 
 COPY . /app
 WORKDIR /app
