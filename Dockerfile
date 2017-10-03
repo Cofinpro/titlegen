@@ -7,6 +7,6 @@ WORKDIR /app
 
 RUN pip3 install .
 
-ENV TITLEGEN_DB="/var/db/titlegen.db"
+ENV DATABASE_URL="postgresql://postgres:mysecretpassword@localhost:5432/postgres"
 ENTRYPOINT ["python"]
 CMD ["app.py"]
