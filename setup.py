@@ -8,5 +8,6 @@ setup(
             'flask',
             'flask_wtf',
             'Psycopg2',
+            'pytest',
         ],
 )

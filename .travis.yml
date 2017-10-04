@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install:
   - pip install .
-script: echo "NoOp"
+script: pytest
 deploy:
   provider: elasticbeanstalk
   access_key_id: "AKIAIOUTUQXXDY34BQJQ"
