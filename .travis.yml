@@ -1,7 +1,7 @@
 language: python
 python:
   - "3.6"
-# command to install dependencies
+cache: pip
 install:
   - pip install .
 script: pytest
