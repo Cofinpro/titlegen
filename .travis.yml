@@ -4,7 +4,7 @@ python:
 cache: pip
 install:
   - pip install .
-script: pytest
+script: echo "No Tests :-("
 deploy:
   provider: elasticbeanstalk
   access_key_id: "AKIAIOUTUQXXDY34BQJQ"
